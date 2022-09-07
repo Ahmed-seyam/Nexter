@@ -1,0 +1,90 @@
+%heading {
+	font-family: $font-display;
+	font-weight: 400;
+}
+
+.heading-1 {
+	font-size: 2rem;
+	@extend %heading;	
+	color: $color-grey-light-1;
+	font-size: 4.5rem;
+	line-height: 1;
+	@media only screen and (max-width: $pb-medium) {
+		font-size: 3.5rem;
+	}
+
+}
+
+.heading-2 {
+	font-size: 2rem;
+	@extend %heading;
+	font-size: 4rem;
+	font-style: italic;
+	&--light {color: $color-grey-light-1;}
+	&--dark {color: $color-grey-dark-1}
+	line-height: 1;
+	@media only screen and (max-width: $pb-largest) {
+		font-size: 3.5rem;
+
+	}
+}
+
+
+.heading-3 {
+	font-size: 2rem;
+	@extend %heading;
+	font-size: 1.6rem;
+	color: $color-primary;
+	text-transform: uppercase;
+}
+
+
+.heading-4 {
+	font-size: 1.9rem;
+	@extend %heading;
+	
+	&--light {color: $color-grey-light-1;}
+	&--dark {color: $color-grey-dark-1}
+
+}
+
+
+.btn {
+	background-color: $color-primary;
+	border: none;
+	border-radius: 0;
+	font-family: $font-display;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	padding: 1.8rem 3rem;
+	color: #fff;
+	cursor: pointer;
+	transition: all .2s;
+	display: inline-block;
+
+	&:hover {
+		background-color: $color-primary-dark ;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+.mb-sm {
+	margin-bottom: 2rem;
+}
+
+.mb-m {
+	margin-bottom: 3rem;
+}
+
+.mb-b {
+	margin-bottom: 4rem;
+}
+
+.mb-l {
+	margin-bottom: 6rem;
+}
+.mb-h {
+	margin-bottom: 8rem;
+}
